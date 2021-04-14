@@ -18,3 +18,10 @@ body {
     border: unset;
     border-radius: 25px;
 }
+
+#entryForm .button {
+    border: unset;
+    border-radius: 25px;
+    padding: 5px 16px;
+    margin-left: 76%;
+}
