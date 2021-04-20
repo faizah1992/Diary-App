@@ -12,6 +12,11 @@ function addEntryToDom(event) {
     entryDiv.style.display = 'none';
     entriesSection.appendChild(entryDiv);
     entryTextbox[0].value = '';
+
+    const displayEntryButton = document.createElement('button');
+    displayEntryButton.className = 'display-entry-button';
+    displayEntryButton.innerText = 1;
+    entriesNav.appendChild(displayEntryButton);
 }
 
 entryForm.addEventListener('submit', addEntryToDom)
