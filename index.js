@@ -1,6 +1,8 @@
 const entryForm = document.getElementById('entryForm');
 const entriesSection = document.getElementById('entries');
 const entryTextbox = document.getElementsByClassName('entry-textbox');
+const entriesNav = document.querySelector('.entries-nav');
+
 
 function addEntryToDom(event) {
     event.preventDefault();
