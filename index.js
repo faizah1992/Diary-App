@@ -7,8 +7,9 @@ function addEntryToDom(event) {
     const entryDiv = document.createElement('div');
     entryDiv.className = 'single-entry';
     entryDiv.innerText = entryTextbox[0].value;
+    entryDiv.style.display = 'none';
     entriesSection.appendChild(entryDiv);
-    // console.log(entryTextbox[0].value);
+    entryTextbox[0].value = '';
 }
 
 entryForm.addEventListener('submit', addEntryToDom)
